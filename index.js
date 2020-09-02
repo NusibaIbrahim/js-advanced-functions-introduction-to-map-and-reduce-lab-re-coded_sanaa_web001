@@ -28,3 +28,17 @@ function reduceToTotal(arr, total = 0) {
   return total;
 }
 
+const reduceToAllTrue = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (!arr[i]) return false;
+  }
+  return true;
+};
+
+const reduceToAnyTrue = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) return true;
+  }
+  return false;
+};
+
